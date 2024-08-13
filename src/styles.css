@@ -1,0 +1,495 @@
+:root {
+    --Basic-Foreground: #1C1C1C;
+    --Basic-Background: #ffffff;
+    --Default-Border-Radius: 1.5rem;
+}
+
+/* Titles */
+h1 {
+    color: var(--Basic-Foreground, #1C1C1C);
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* Headings/H1 ----------- 4.0rem */
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 3.25rem */
+}
+
+section {
+    height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+ul,
+li {
+    all: unset;
+}
+
+
+button {
+    all: unset;
+}
+
+
+html,
+body,
+#root {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.experience {
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 4px 16px 0px rgba(19, 19, 19, 0.15);
+    border-radius: 1.5rem;
+
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
+    height: 2rem;
+    flex-shrink: 1;
+
+    color: var(--Basic-Brand, #000);
+    background: var(--Basic-Background, #FFF);
+
+
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    font-feature-settings: 'liga' off, 'clig' off;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
+    height: 3rem;
+    flex-shrink: 1;
+
+    color: var(--Basic-Brand, #000);
+    background: var(--Basic-Background, #FFF);
+
+
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.navbar-item:hover {
+    background: var(--Basic-Brand, #000);
+    color: var(--Basic-Background, #FFF);
+}
+
+.navbar-item-first {
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.navbar-item-last {
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+/* HERO TITLE SECTION */
+.title-section {
+    top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.hero {
+    color: var(--Basic-Foreground, #1C1C1C);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Titles/T1 ----------- 9.6rem */
+    font-family: "Josefin Sans";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0;
+    width: 50vw;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        font-size: 3rem;
+        /* Riduci la dimensione del font per dispositivi mobili */
+        width: 80vw;
+        /* Adatta la larghezza per dispositivi mobili */
+    }
+}
+
+.l3 {
+    color: var(--Basic-Foreground, #1C1C1C);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Paragraph/P1 ------------ 2.0rem */
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .l3 {
+        font-size: 1.1rem;
+        /* Riduci la dimensione del font per dispositivi mobili */
+    }
+}
+
+.centered {
+    text-align: center;
+    width: 60vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 11rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: var(--Default-Border-Radius);
+    background: var(--Basic-Brand, #000);
+    color: var(--Basic-Background, #FFF);
+
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button-outlined {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 11rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: var(--Default-Border-Radius);
+    background: var(--Basic-Background);
+    color: var(--Basic-Brand);
+
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    border: 1px solid var(--Basic-Foreground);
+
+    /* Updated to black */
+}
+
+.button:hover {
+    background: var(--Basic-Background);
+    color: var(--Basic-Brand);
+    box-shadow: 0px 4px 16px 0px rgba(19, 19, 19, 0.15);
+}
+
+.buttons-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto; /* Centra orizzontalmente */
+}
+
+@media (max-width: 1200px) {
+    .features {
+      height: fit-content;
+    }
+}
+
+.features-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 12vw;
+}
+
+.features-cards {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    gap: 5rem;
+    width: fit-content;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .features-cards {
+     gap: 2rem;
+    }
+}
+
+.features-title {
+    width: 24rem;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+
+.features-subtitle {
+    width: 40%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+
+    padding: 1.25rem;
+
+    /* Normal / Elevated 1 */
+    box-shadow: 0px 4px 16px 0px rgba(19, 19, 19, 0.15);
+    background: var(--Basic-Background);
+}
+
+.card-black {
+    background: var(--Basic-Foreground);
+    color: var(--Basic-Background);
+}
+
+.card-black .card-title {
+    color: var(--Basic-Background);
+    /* Override color */
+}
+
+.card-black .card-description {
+    color: var(--Basic-Background);
+    /* Override color */
+}
+
+.card-title {
+    width: 12rem;
+    color: var(--Basic-Foreground, #1C1C1C);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Headings/H5 ----------- 2.0rem */
+    font-family: "Josefin Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 1.625rem */
+}
+
+.card-description {
+    width: 18rem;
+    color: var(--Basic-Foreground, #1C1C1C);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Paragraph/P4 ----------- 1.4rem */
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 1.4rem */
+}
+
+/* QUOTE */
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.quote {
+
+    width: 44vw;
+
+    color: var(--Basic-Background);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* Titles/T1 ----------- 9.6rem */
+    font-family: "Josefin Sans";
+    font-size: clamp(4rem, 9vw, 152px);
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0;
+    margin-left: 8rem;.quote {
+        position: relative;
+        display: inline-block;
+        width: 44vw;
+        color: var(--Basic-Background);
+        font-feature-settings: 'liga' off, 'clig' off;
+        
+        /* Titles/T1 ----------- 9.6rem */
+        font-family: "Josefin Sans";
+        font-size: clamp(4rem, 9vw, 152px);
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1.1em;
+        margin: 0;
+        margin-left: 8rem;
+        margin-top: 6rem;
+    
+        /* Outline al testo */
+        text-shadow: 
+            -2px -2px 0 var(--Basic-Foreground),  
+            2px -2px 0 var(--Basic-Foreground),
+            -2px 2px 0 var(--Basic-Foreground),
+            2px 2px 0 var(--Basic-Foreground);
+    }
+    
+    .quote::before {
+        content: attr(data-letters);
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+        color: var(--Basic-Foreground);
+        white-space: nowrap;
+        width: 0%;
+        transition: width 0.4s 0.3s;
+    }
+    
+    .quote:hover::before {
+        width: 100%;
+    }
+    
+    .quote::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: var(--Basic-Background);
+        transform: translateX(-100%);
+        transition: transform 0.4s;
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    
+    .quote:hover::after {
+        transform: translateX(100%);
+    }
+    margin-top: 6rem;
+
+    /* Outline al testo */
+    text-shadow: 
+        -2px -2px 0 var(--Basic-Foreground),  
+        2px -2px 0 var(--Basic-Foreground),
+        -2px 2px 0 var(--Basic-Foreground),
+        2px 2px 0 var(--Basic-Foreground);
+}
+
+@media (max-width: 768px) {
+    .quote {
+        /* Adatta la larghezza per dispositivi mobili */
+        margin-left: 3rem;
+
+        text-shadow: 
+        -1px -1px 0 var(--Basic-Foreground),  
+        1px -1px 0 var(--Basic-Foreground),
+        -1px 1px 0 var(--Basic-Foreground),
+        1px 1px 0 var(--Basic-Foreground);
+}
+    
+}
+
+.quote-author {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Lead/L1 ------------ 2.0rem */
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 2rem */
+
+    padding-left: 6.25rem;
+}
